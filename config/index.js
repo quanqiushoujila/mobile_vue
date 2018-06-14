@@ -12,13 +12,13 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       '/api': {
-        target: 'http://localhost:9999',
+        target: 'http://localhost:80',
         pathRewrite: {
-          '^/api': '/static/json'
+          '^/api': '/json'
         }
       },
       // secure: false,  // 如果是https接口，需要配置这个参数
-      // changeOrigin: true, // 如果接口跨域，需要进行这个参数配置
+      changeOrigin: true, // 如果接口跨域，需要进行这个参数配置
     },
 
     // Various Dev Server settings

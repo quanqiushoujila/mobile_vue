@@ -6,6 +6,7 @@ import router from './router'
 import ElementUI from 'element-ui'
 import VueLazyload from 'vue-lazyload'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
+import store from './store'
 import 'css/reset.css'
 import 'normalize.css'
 import 'font-awesome/css/font-awesome.css'
@@ -26,6 +27,7 @@ Vue.use(VueAwesomeSwiper)
 new Vue({
   el: '#app',
   router,
+  store,
   components: { App },
   template: '<App/>'
 })

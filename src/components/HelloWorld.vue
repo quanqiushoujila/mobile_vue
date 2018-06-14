@@ -1,18 +1,25 @@
 <template>
   <div class="hello">
-    hello
+    {{test}}
     <h1>{{ msg }}</h1>
     <router-link to="/HiWorld">hi</router-link>
   </div>
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
+
 export default {
   name: 'HelloWorld',
   data () {
     return {
       msg: 'HelloWorld'
     }
+  },
+  computed: {
+    ...mapGetters([
+      'test'
+    ])
   }
 }
 </script>

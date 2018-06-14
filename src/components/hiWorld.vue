@@ -1,5 +1,6 @@
 <template>
   <div class="hello">
+    hi
     <h1>{{ msg }}</h1>
     <router-link to="/HelloWorld">HelloWorld</router-link>
   </div>

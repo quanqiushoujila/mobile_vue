@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "better-scroll": "^1.12.1",
+    "element-ui": "^2.4.1",
     "font-awesome": "^4.7.0",
     "hotcss": "^2.2.1",
     "normalize.css": "^8.0.0",

@@ -1,3 +1,4 @@
 @charset "utf-8";
 a {color: #25a4bb;text-decoration: none;}
 ul,ol,menu{list-style:none}
+img, p {margin:0;}

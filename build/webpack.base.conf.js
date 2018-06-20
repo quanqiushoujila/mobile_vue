@@ -43,7 +43,8 @@ module.exports = {
       'api': resolve('src/api'),
       'font': resolve('src/font'),
       'img': resolve('src/img'),
-      'page': resolve('src/page')
+      'page': resolve('src/page'),
+      'components': resolve('src/components')
     }
   },
   module: {

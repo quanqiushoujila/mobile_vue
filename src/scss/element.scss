@@ -1,0 +1,19 @@
+@import "./layout.scss";
+
+@mixin list($direction: column) {
+  @include flex($direction);
+}
+
+@mixin btn() {
+
+}
+
+@mixin panel() {
+
+}
+
+@mixin ellipsis() {
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}

@@ -1,5 +1,15 @@
 @import "./layout.scss";
 
+// 全局布局
+$paddingTop: 80px;
+$paddingBottom: 100px;
+
+@mixin fixed() {
+  position: fixed;
+  left: 0;
+  right: 0;
+}
+
 @mixin list($direction: column) {
   @include flex($direction);
 }

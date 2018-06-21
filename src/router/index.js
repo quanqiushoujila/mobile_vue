@@ -8,12 +8,28 @@ export default new Router({
   routes: [
     {
       path: '/',
-      redirect: '/home'
+      redirect: '/public/index'
     },
     {
-      path: '/home',
-      name: 'index',
-      component: () => import('@/page/home')
+      path: '/public',
+      name: 'public',
+      component: () => import('@/page/public'),
+      children: [
+        {
+          path: 'index',
+          name: 'index',
+          component: () => import('@/page/home')
+        }
+      ]
+    },
+    {
+      path: '/search',
+      name: 'search',
+      component: () => import('@/page/search')
+    },
+    {
+      path: '*',
+      redirect: '/public/index'
     }
   ]
 })

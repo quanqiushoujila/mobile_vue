@@ -9,9 +9,11 @@ import VueAwesomeSwiper from 'vue-awesome-swiper'
 import store from './store'
 import 'css/reset.css'
 import 'normalize.css'
-import 'font-awesome/css/font-awesome.css'
+import 'css/base.css'
 import 'element-ui/lib/theme-chalk/index.css'
 import 'swiper/dist/css/swiper.css'
+import 'font-awesome/css/font-awesome.css'
+import 'css/iconfont.css'
 
 Vue.config.productionTip = false
 Vue.use(ElementUI)

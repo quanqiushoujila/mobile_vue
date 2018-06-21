@@ -46,6 +46,17 @@ export default {
         }
       }
     }
+  },
+  computed: {
+    swiper () {
+      return this.$refs.mySwiper.swiper
+    }
+  },
+  activated () {
+    this.swiper.update()
+  },
+  deactivated () {
+    // this.swiper.destroy(false)
   }
 }
 </script>

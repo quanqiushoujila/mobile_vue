@@ -3,7 +3,6 @@
     <search/>
     <slide/>
     <k-nav/>
-    <footer-nav/>
   </div>
 </template>
 
@@ -11,20 +10,20 @@
 import kNav from 'components/home/nav'
 import search from 'components/home/search'
 import slide from 'components/home/kSlide'
-import footerNav from 'components/public/footerNav'
 export default {
   name: 'home',
   components: {
     search,
     slide,
-    footerNav,
     kNav
   }
 }
 </script>
 
 <style lang="scss" scoped>
+  @import 'scss/element.scss';
   #home {
-    padding: 100px 0;
+    padding-top: $paddingTop;
+    padding-bottom: $paddingBottom;
   }
 </style>

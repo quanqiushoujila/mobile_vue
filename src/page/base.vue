@@ -8,5 +8,5 @@
 </script>
 
 <style lang="scss" scoped>
-
+  @import 'scss/element.scss';
 </style>

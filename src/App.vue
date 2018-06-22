@@ -20,9 +20,9 @@ export default {
   },
   watch: {
     '$router' (to, from) {
-      if (to.path === '/public/index'){
-       this.transitionName = 'slide-left'
-      } else if(from.path === '/search') {
+      if (to.path === '/public/index') {
+        this.transitionName = 'slide-left'
+      } else if (from.path === '/search') {
         this.transitionName = 'slide-right'
       }
     }

@@ -7,6 +7,8 @@ import ElementUI from 'element-ui'
 import VueLazyload from 'vue-lazyload'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import store from './store'
+import Mint from 'mint-ui'
+
 import 'css/reset.css'
 import 'normalize.css'
 import 'css/base.css'
@@ -14,8 +16,10 @@ import 'element-ui/lib/theme-chalk/index.css'
 import 'swiper/dist/css/swiper.css'
 import 'font-awesome/css/font-awesome.css'
 import 'css/iconfont.css'
+import 'mint-ui/lib/style.css'
 
 Vue.config.productionTip = false
+Vue.use(Mint)
 Vue.use(ElementUI)
 Vue.use(VueLazyload)
 Vue.use(VueAwesomeSwiper)

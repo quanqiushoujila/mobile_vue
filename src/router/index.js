@@ -8,7 +8,7 @@ export default new Router({
   routes: [
     {
       path: '/',
-      redirect: '/public/index'
+      redirect: '/index'
     },
     {
       path: '/public',
@@ -16,7 +16,7 @@ export default new Router({
       component: () => import('@/page/public'),
       children: [
         {
-          path: 'index',
+          path: '/index',
           name: 'index',
           component: () => import('@/page/home')
         }
@@ -29,7 +29,7 @@ export default new Router({
     },
     {
       path: '*',
-      redirect: '/public/index'
+      redirect: '/index'
     }
   ]
 })

@@ -7,6 +7,14 @@
 import searchHeader from 'components/search/searchHeader'
 export default {
   name: 'search',
+  beforeRouteUpdate (to, from, next) {
+    console.log('beforeRouteUpdate')
+    next()
+  },
+  beforeRouteEnter (to, from, next) {
+    console.log('beforeRouteEnter')
+    next()
+  },
   components: {searchHeader}
 }
 </script>
